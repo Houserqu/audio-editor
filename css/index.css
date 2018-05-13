@@ -1,0 +1,84 @@
+/* 公共 CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+.container {
+    height: 100%;
+} 
+.btn {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px#ccc;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.menu {
+    position: absolute;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #6b7370;
+}
+.main {
+    padding-top: 70px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.aside, .right {
+    float: left;
+    height: 100%;
+}
+.aside {
+    width: 25%;
+    background: #6b7370;
+}
+.right {
+    margin-left: 1%;
+    width: 74%;
+    background: #6b7370;
+}
+.tool {
+    padding: 10px 20px;
+    border-bottom: 2px solid #fff;
+}
+.right .tool .btn {
+    width: 100px;
+}
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+form input[type=submit] {
+    width: 50px;
+}
+.list {
+    margin-top: 20px;
+    list-style: none;
+}
+.list li {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.list li:hover {
+    background: rgb(90, 90, 90);
+}
+
+/* audio canvas  */
+.audio-line {
+    /* width: 1000px;
+    height: 100px; */
+    border: 1px solid red;
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="container">
+    <nav class="menu">
+        <div class="btn">文件</div>
+        <div class="btn">自动排序</div>
+        <div class="btn">导入音频</div>
+        <div class="btn">导出音频</div>
+        <div class="btn">系统设置</div>
+    </nav>
+    <div class="main">
+        <section class="aside">
+            <div class="tool">
+                <div class="btn">排序</div>
+                <div class="btn">过滤</div>
+                <div class="btn">搜索</div>
+            </div>
+            <form id="upload-form" action="服务器路径" method="post" enctype="multipart/form-data" >
+                <input type="file" name="upload"/>
+                <input type="submit" value="上传" class="upload" />
+            </form>
+            <ul class="list">
+                <li>文件1</li>
+                <li>文件2</li>
+                <li>文件3</li>
+            </ul>
+        </section>
+        <section class="right">
+            <div class="tool">
+                <div class="btn">显示音频波形</div>
+                <div class="btn">显示文字内容</div>
+                <div id="restart" class="btn">重置</div>
+            </div>
+            <div class="show">
+              <canvas id="audio-line-1" class="audio-line" width="1000" height="100"></canvas>
+              <div>
+                当前坐标: x=<span id="point_x">0</span>  y=<span id="point_y">0</span>
+              </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
