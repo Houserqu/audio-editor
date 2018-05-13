@@ -74,11 +74,11 @@ canvasInit();
  * 剪切模式切换
  */
 
-document.getElementById('cut').addEventListener('click', function(e){
-  cut_mode = !cut_mode;
+// document.getElementById('cut').addEventListener('click', function(e){
+//   cut_mode = !cut_mode;
 
-  console.log(cut_mode);
-})
+//   console.log(cut_mode);
+// })
 
 // AudioCanvas.paintCut(100,200);
 
